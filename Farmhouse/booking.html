@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Farmhouse Family Resort</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>The Farmhouse Family Resort</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="booking.html">Booking</a>
+    </nav>
+  </header>
+  <main>
+    <h2>Book Your Visit</h2>
+    <form action="booking.php" method="post">
+      <input name="name" placeholder="Full name" required>
+      <input name="email" type="email" placeholder="Email" required>
+      <label>Check-in <input name="checkin" type="date" required></label>
+      <label>Check-out <input name="checkout" type="date" required></label>
+      <select name="guests">
+        <option>1 guest</option>
+        <option>2 guests</option>
+        <option>3-5 guests</option>
+        <option>6+ guests</option>
+      </select>
+      <button>Book Now</button>
+    </form>
+  </main>
+  <footer>Visity Our Family Resort Gem</footer>
+</body>
+</html>

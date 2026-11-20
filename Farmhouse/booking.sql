@@ -1,0 +1,13 @@
+CREATE DATABASE IF NOT EXISTS farmhouse;
+USE farmhouse;
+
+CREATE TABLE IF NOT EXISTS bookings (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(100),
+  email VARCHAR(100),
+  checkin DATE,
+  checkout DATE,
+  guests VARCHAR(20),
+  created TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  INDEX (checkin)
+);
